@@ -28,7 +28,6 @@
     </div>
 
 </div>
-<input class="buttonCheckout buttonCheckout-mobile" type="submit" value="Go to checkout">
 <script src="{{ asset('payment/payment.js') }}"></script>
 </body>
 </html>

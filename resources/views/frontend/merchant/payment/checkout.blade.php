@@ -43,7 +43,8 @@
     </div>
 
     <input class="buttonCheckout buttonCheckout-web" type="submit" value="Pay {{ $paymentInfo->amount }} {{ $paymentInfo->currency }} ">
-
+    
+    <input class="buttonCheckout buttonCheckout-mobile" type="submit" value="Pay {{ $paymentInfo->amount }} {{ $paymentInfo->currency }} ">
     </form>
 
 {{--    <a href="{{ url($paymentInfo->cancel_url) }}" class="cancel-link">Cancel and return to store</a>--}}

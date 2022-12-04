@@ -81,8 +81,8 @@ class DepositController extends Controller
        // $client->set('cancel_trx', $transactionID);
 
         Session::put('cancel_trx', $transactionID);
-
-       self::paypal($request, $gateway,$transaction);
+ 
+       return  self::gateway($request, $gateway,$depositInfo,$transaction);
 
     }
 
@@ -92,7 +92,7 @@ class DepositController extends Controller
 
 
         $depositInfo = new Fluent($depositInfo);
-        $amount = $depositInfo->amount;
+         $amount = $transaction->amount;
         $transactionID = $transaction->id;
         $trxid = $transaction->trxid;
 
