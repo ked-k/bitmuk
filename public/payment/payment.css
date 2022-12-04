@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&display=swap');
+
+html,
+body {
+    color: #263238;
+    height: 100%;
+    font: 400 18px/140% "Jaldi", sans-serif;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    width: 100%;
+}
+
+@media (min-width: 640px) {
+    body {
+        background: linear-gradient(-45deg, #0277bd 0%, #0091ea 100%);
+        overflow: hidden;
+    }
+}
+
+.billing {
+    margin-top: 20px;
+    padding: 0 10px;
+}
+
+.billing-headline {
+    margin-bottom: 10px;
+}
+
+@media (min-width: 640px) {
+    .browserViewport {
+        height: 602px;
+        -ms-overflow-style: none;
+        overflow-y: scroll;
+        width: 400px;
+    }
+}
+
+.buttonCheckout {
+    background: #00c853;
+    border: none;
+    bottom: 0;
+    color: #fff;
+    font: 700 18px "Jaldi", sans-serif;
+    height: 60px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    outline: 0;
+    width: 100%;
+    cursor: pointer;
+}
+
+.buttonCheckout-web {
+    position: absolute;
+}
+@media (max-width: 639px) {
+    .buttonCheckout-web {
+        display: none;
+    }
+}
+
+.buttonCheckout-mobile {
+    position: fixed;
+}
+@media (min-width: 640px) {
+    .buttonCheckout-mobile {
+        display: none;
+    }
+}
+
+.buttonCheckout:active {
+    background: #00b94d;
+}
+
+h1,
+h2 {
+    padding: 0;
+    margin: 0;
+}
+
+.checkboxGroup input[type=checkbox] {
+    position: absolute;
+    visibility: hidden;
+}
+
+.checkboxGroup > label {
+    cursor: pointer;
+}
+
+.checkboxGroup > input[type=checkbox]:checked ~ label::before {
+    background: #00c853 url('img/ico_checkmark.svg') center center/16px 13px no-repeat;
+    box-sizing: border-box;
+    content: "";
+    display: inline-block;
+    height: 25px;
+    margin-right: 10px;
+    top: 7px;
+    transition: 150ms ease-out;
+    position: relative;
+    width: 25px;
+}
+
+.checkboxGroup > input[type=checkbox]:not(:checked) ~ label::before {
+    background: #fff center center/16px 13px no-repeat;
+    border: 2px solid #cfd8dc;
+    box-sizing: border-box;
+    content: "";
+    display: inline-block;
+    height: 25px;
+    margin-right: 10px;
+    top: 7px;
+    transition: 150ms ease-out;
+    position: relative;
+    width: 25px;
+}
+
+.header {
+    border-bottom: 1px solid #eceff1;
+    height: 40px;
+    display: block;
+    position: relative;
+    width: 100%;
+}
+
+.header-logo {
+    color: #263238;
+    font: 700 0.88rem "Jaldi", sans-serif;
+    left: 13px;
+    top: 8px;
+    position: absolute;
+}
+
+.header-logo::before {
+    background: #263238;
+    content: "";
+    display: inline-block;
+    height: 13px;
+    margin: auto 10px auto auto;
+    position: relative;
+    top: 1px;
+    transform: rotate(45deg);
+    width: 13px;
+}
+
+.header-nav {
+    background: url('img/ico_menu.svg') no-repeat;
+    height: 18px;
+    position: absolute;
+    top: 11px;
+    right: 10px;
+    width: 26px;
+}
+
+
+@media (min-width: 640px) {
+    .iphoneWrapper {
+        background: #ffffff;
+        border-radius: 2px;
+        box-shadow: 0px 30px 100px rgba(0, 0, 0, 0.35);
+        height: 667px;
+        left: 50%;
+        overflow: hidden;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 375px;
+    }
+}
+
+.screenPayment {
+    padding-bottom: 100px;
+}
+
+.type-S {
+    color: #263238;
+    font: 700 13.5338345865px/100% "Jaldi", sans-serif;
+}
+
+.type-L {
+    color: #263238;
+    font: 700 18px/100% "Jaldi", sans-serif;
+}
+
+.type-XL {
+    color: #263238;
+    font: 700 31.8402px/100% "Jaldi", sans-serif;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+.pager {
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+.pager-headline {
+    margin-top: 0.6rem;
+}
+
+.pager-nav {
+    margin-top: 16px;
+}
+
+
+.payment {
+    margin-top: 36px;
+    padding: 0 10px;
+}
+
+.payment-cardimg {
+    height: 23px;
+    position: absolute;
+    right: 19px;
+    top: 16px;
+}
+
+.payment-headline {
+    margin-bottom: 10px;
+}
+
+.payment-radioGroup {
+    margin-bottom: 10px;
+}
+
+.payment-radioGroup > input {
+    position: absolute;
+    visibility: hidden;
+}
+
+.payment-radioGroup > input:checked ~ label::before {
+    border: 7px solid #00c853;
+}
+
+.payment-radioGroup > input:checked ~ label {
+    font: 700 1rem "Jaldi", sans-serif;
+}
+
+.payment-radioGroup > label {
+    cursor: pointer;
+    display: block;
+    position: relative;
+    top: -2px;
+}
+
+.payment-radioGroup > label::before {
+    transition: 100ms ease-out;
+    box-sizing: border-box;
+    background: #fff;
+    border: 2px solid #cfd8dc;
+    border-radius: 100%;
+    content: "";
+    display: inline-block;
+    height: 22px;
+    margin-right: 10px;
+    position: relative;
+    top: 6px;
+    width: 22px;
+}
+
+.payment-tab {
+    background: #eceff1;
+    border: 2px solid #eceff1;
+    box-sizing: border-box;
+    height: 60px;
+    overflow: hidden;
+    padding: 13px 20px;
+    position: relative;
+    transition: 150ms ease-out;
+    width: 100%;
+}
+
+.payment-tab:first-of-type {
+    border-radius: 5px 5px 0 0;
+}
+
+.payment-tab:last-of-type {
+    border-radius: 0 0 5px 5px;
+}
+
+.payment-tab-isActive {
+    background: #ffffff;
+}
+
+
+.payment-tab-isActive:nth-of-type(1) {
+    height: 150px;
+}
+
+.payment-tab-isActive:nth-of-type(2) {
+    height: 150px;
+}
+
+.payment-tab-isActive:nth-of-type(3) {
+    height: 150px;
+}
+
+.payment-tab-isActive:nth-of-type(4) {
+    height: 150px;
+}
+
+.payment-tab-isActive:nth-of-type(5) {
+    height: 150px;
+}
+
+.payment-tab-isActive:nth-of-type(6) {
+    height: 150px;
+}
+
+.payment-tab-isActive:nth-of-type(7) {
+    height: 150px;
+}
+
+.payment-tab-isActive:nth-of-type(8) {
+    height: 150px;
+}
+
+.payment-tab-isActive:nth-of-type(9) {
+    height: 150px;
+}
+
+.payment-tab-isActive:nth-of-type(10) {
+    height: 150px;
+}
+
+.payment-tab-isActive:nth-of-type(11) {
+    height: 150px;
+}
+
+.payment-tab-isActive:nth-of-type(12) {
+    height: 150px;
+}
+
+.payment-tab-isActive:last-child {
+    height: 307px;
+}
+
+.payment-tab-isActive.onlySelect {
+    height: 60px;
+}
+
+.textInputGroup > input {
+    border: 2px solid #cfd8dc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    display: block;
+    font: 400 18px "Jaldi", sans-serif;
+    height: 50px;
+    margin: -15px auto 5px;
+    padding: 5px 10px 0 11px;
+    transition: 100ms ease-out;
+    width: 100%;
+}
+
+.textInputGroup > input:focus {
+    border: 2px solid #00c853;
+    outline: 0;
+}
+
+.textInputGroup > label {
+    background: #ffffff;
+    display: inline-block;
+    font: 700 16px "Jaldi", sans-serif;
+    margin: 5px auto auto 8px;
+    padding: 0px 5px;
+}
+
+.textInputGroup-halfWidth {
+    float: left;
+    width: 48%;
+}
+
+.textInputGroup-halfWidthRight {
+    float: right;
+    width: 48%;
+}
