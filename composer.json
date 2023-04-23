@@ -24,6 +24,7 @@
         "laravel/sanctum": "^2.11",
         "laravel/tinker": "^2.5",
         "laravelcollective/html": "^6.2",
+        "livewire/livewire": "^2.12",
         "mckenziearts/laravel-notify": "^2.2",
         "mollie/laravel-mollie": "^2.18",
         "nextapps/laravel-verification-code": "^1.2",
